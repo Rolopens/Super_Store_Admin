@@ -1,211 +1,108 @@
-# [Vue-Black Dashboard](https://demos.creative-tim.com/vue-black-dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=Black%20Dashboard%20by%20Creative%20Tim&url=https%3A%2F%2Fdemos.creative-tim.com%2Fblack-dashboard%2Fexamples%2Fdashboard.html&via=CreativeTim)
+<h1 align="center">Windzo Dashboard Admin</h1>
+<p align="center">this dashboard app on development fork 
+this repo and contribute</p>
 
+<div align="center">
+<img src="https://img.shields.io/github/repo-size/sahrullahh/windzo" />
+<img src="https://img.shields.io/github/license/sahrullahh/windzo" />
+<a href="https://www.npmjs.com/package/windzo">
+<img src="https://img.shields.io/npm/v/windzo">
+</a>
+</div>
 
- ![version](https://img.shields.io/badge/version-1.1.1-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/black-dashboard/issues.svg?maxAge=2592000)](https://github.com/creativetimofficial/black-dashboard/issues/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/black-dashboard/issues.svg?maxAge=2592000)](https://github.com/creativetimofficial/black-dashboard/issues/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+<p align="center">Windzo is a free open source dashboard admin template, using vue js and tailwind css framework, make your app build easily and fast.</p>
 
+### Light mode
 
-![Product Gif](https://github.com/creativetimofficial/vue-black-dashboard/blob/live-demo/src/assets/demo/product-gif.gif?raw=true)
+<!-- <img src="./windzo-light-mode.png" /> -->
 
-**Vue Black Dashboard** is a beautiful Bootstrap 4 Admin Dashboard with a huge number of components built to fit together and look amazing. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you. It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics.
+![Windzo UI Dashboard Mohammad Sahrullah](https://github.com/sahrullahh/windzo/blob/master/windzo-light-mode.png)
 
-**Vue Black Dashboard** comes packed with all plugins that you might need inside a project and documentation on how to get started. It is light and easy to use, and also very powerful.
+### Dark mode
 
-Vue Black Dashboard features over 16 individual components, giving you the freedom of choosing and combining. This means that there are thousands of possible combinations. All components can take variations in color, that you can easily modify using SASS files. You will save a lot of time going from prototyping to full-functional code because all elements are implemented.
-We thought about everything, so this dashboard comes with 2 versions, Dark Mode and Light Mode.
+![Windzo UI Dashboard Mohammad Sahrullah](https://github.com/sahrullahh/windzo/blob/master/windzo-dark-mode.png)
 
-We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+<!-- <img src="./windzo-dark-mode.png" /> -->
 
+## Live Demo
 
-## Table of Contents
+Click here to <a href="https://windzo.vercel.app/">Live Demo.</a>
 
+## Installation
 
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
-
-## Demo
-
-- [Start page](https://demos.creative-tim.com/vue-black-dashboard)
-- [User profile page](https://demos.creative-tim.com/vue-black-dashboard/#/profile)
-- [Tables page ](https://demos.creative-tim.com/vue-black-dashboard/#/table-list)
-- [Maps Page](https://demos.creative-tim.com/vue-black-dashboard/#/maps)
-- [Notifications page](https://demos.creative-tim.com//vue-black-dashboard/#/notifications)
-
-[View More](https://demos.creative-tim.com/vue-black-dashboard).
-
-
-## Quick start
-
-- Clone the repo: `git clone https://github.com/creativetimofficial/vue-black-dashboard.git`.
-- [Download from Github](https://github.com/creativetimofficial/vue-black-dashboard/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/vue-black-dashboard).
-
-
-## Documentation
-The documentation for the Vue Black Dashboard is hosted at our [website](https://demos.creative-tim.com/vue-black-dashboard/documentation).
-
-
-## File Structure
-Within the download you'll find the following directories and files:
+<p>1. clone this repo first or download zip code </p>
 
 ```
-|-- Vue Black Dashboard
-    |-- .babelrc  
-    |-- .env
-    |-- .eslintrc
-    |-- .gitattributes
-    |-- .gitignore
-    |-- CHANGELOG.md
-    |-- CONTRIBUTING.md
-    |-- LICENSE.md
-    |-- README.md
-    |-- package.json
-    |-- vue.config.js
-    |-- src
-        |-- App.vue
-        |-- i18n.js
-        |-- main.js
-        |-- assets
-        |   |-- css
-        |   |   |-- nucleo-icons.css
-        |   |-- demo
-        |   |   |-- demo.css
-        |   |-- fonts
-        |   |   |-- nucleo.eot
-        |   |   |-- nucleo.ttf
-        |   |   |-- nucleo.woff
-        |   |   |-- nucleo.woff2
-        |   |-- sass
-        |       |-- black-dashboard.scss
-        |       |-- black-dashboard
-        |           |-- bootstrap
-        |           |-- custom
-        |           |-- plugins
-        |-- components
-        |   |-- BaseAlert.vue
-        |   |-- BaseButton.vue
-        |   |-- BaseCheckbox.vue
-        |   |-- BaseDropdown.vue
-        |   |-- BaseNav.vue
-        |   |-- BaseTable.vue
-        |   |-- CloseButton.vue
-        |   |-- Modal.vue
-        |   |-- NavbarToggleButton.vue
-        |   |-- index.js
-        |   |-- Cards
-        |   |   |-- Card.vue
-        |   |   |-- StatsCard.vue
-        |   |-- Charts
-        |   |   |-- BarChart.js
-        |   |   |-- LineChart.js
-        |   |   |-- config.js
-        |   |   |-- utils.js
-        |   |-- Inputs
-        |   |   |-- BaseInput.vue
-        |   |-- NotificationPlugin
-        |   |   |-- Notification.vue
-        |   |   |-- Notifications.vue
-        |   |   |-- index.js
-        |   |-- SidebarPlugin
-        |       |-- SideBar.vue
-        |       |-- SidebarLink.vue
-        |       |-- index.js
-        |-- directives
-        |   |-- click-ouside.js
-        |-- layout
-        |   |-- dashboard
-        |       |-- Content.vue
-        |       |-- ContentFooter.vue
-        |       |-- DashboardLayout.vue
-        |       |-- MobileMenu.vue
-        |       |-- SidebarSharePlugin.vue
-        |       |-- TopNavbar.vue
-        |-- locales
-        |   |-- ar.json
-        |   |-- en.json
-        |-- pages
-        |   |-- Dashboard.vue
-        |   |-- Icons.vue
-        |   |-- Maps.vue
-        |   |-- NotFoundPage.vue
-        |   |-- Notifications.vue
-        |   |-- Profile.vue
-        |   |-- TableList.vue
-        |   |-- Typography.vue
-        |   |-- Dashboard
-        |   |   |-- TaskList.vue
-        |   |   |-- UserTable.vue
-        |   |-- Notifications
-        |   |   |-- NotificationTemplate.vue
-        |   |-- Profile
-        |       |-- EditProfileForm.vue
-        |       |-- UserCard.vue
-        |-- plugins
-        |   |-- RTLPlugin.js
-        |   |-- blackDashboard.js
-        |   |-- globalComponents.js
-        |   |-- globalDirectives.js
-        |   |-- liveDemo.js
-        |-- router
-            |-- index.js
-            |-- routes.js
-
+git clone https://github.com/sahrullahh/windzo.git
 ```
 
+<p>2. Open windzo folder and follow the step </p>
 
-## Browser Support
+## Step to run this app
 
-At present, we officially aim to support the last two versions of the following browsers:
+## 1. Project setup
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+<p>before use,  install all dependencies app first with command :</p>
 
+using npm :
 
+```
+npm install
+```
 
-## Reporting Issues
+using yarn :
 
-We use GitHub Issues as the official bug tracker for the Vue Black Dashboard. Here are some advices for our users that want to report an issue:
+```
+yarn install
+```
 
-1. Make sure that you are using the latest version of the Vue Black Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+### 2. Compiles and hot-reloads for development
 
+<p>run this command to compile code :</p>
 
-## Technical Support or Questions
+using npm :
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+```
+npm run serve
+```
 
+using yarn :
 
-## Licensing
+```
+yarn serve
+```
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
+### 3. Compiles and minifies for production
 
-- Licensed under MIT (https://github.com/creativetimofficial/vue-black-dashboard/issues/blob/master/LICENSE.md)
+<p>build your app project to production with command :</p>
 
+using npm :
 
+```
+npm run build
+```
 
-## Useful Links
+using yarn :
 
-- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+```
+yarn build
+```
 
-##### Social Media
+## Open Contribute
 
-Twitter: <https://twitter.com/CreativeTim>
+This repository ready to contribute
 
-Facebook: <https://www.facebook.com/CreativeTim>
+##### Contribute Guide
 
-Dribbble: <https://dribbble.com/creativetim>
+- Fork this repository
+- `npm install` or `yarn install`
+- make change
+- open pull request
 
-Google+: <https://plus.google.com/+CreativetimPage>
+## Author
 
-Instagram: <https://instagram.com/creativetimofficial>
+Windzo is created by <a href="https://github.com/sahrullahh">Mohammad Sahrullah.</a>
+
+## License
+
+[MIT](https://github.com/sahrullahh/windzo/blob/master/LICENSE)

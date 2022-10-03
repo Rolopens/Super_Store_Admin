@@ -1,33 +1,22 @@
-/*
- =========================================================
- * Vue Black Dashboard - v1.1.0
- =========================================================
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import { Icon } from "@iconify/vue";
+import VueApexCharts from "vue3-apexcharts";
+import PerfectScrollbar from "vue3-perfect-scrollbar";
+import "vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css";
+// import "flowbite";
+import "./assets/tailwind.css";
+import "./assets/animate.css";
+import "./assets/sass/css/windzo.css";
 
- * Product Page: https://www.creative-tim.com/product/black-dashboard
- * Copyright 2018 Creative Tim (http://www.creative-tim.com)
+const app = createApp(App);
+app.use(router, Icon);
+app.use(VueApexCharts);
+app.use(PerfectScrollbar);
+app.mount("#app");
 
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-import Vue from "vue";
-import VueRouter from "vue-router";
-import RouterPrefetch from 'vue-router-prefetch'
-import App from "./App";
-// TIP: change to import router from "./router/starterRouter"; to start with a clean layout
-import router from "./router/index";
-
-import BlackDashboard from "./plugins/blackDashboard";
-import i18n from "./i18n"
-import './registerServiceWorker'
-Vue.use(BlackDashboard);
-Vue.use(VueRouter);
-Vue.use(RouterPrefetch);
-
-/* eslint-disable no-new */
-new Vue({
-  router,
-  i18n,
-  render: h => h(App)
-}).$mount("#app");
+router.beforeEach((to, from, next) => {
+  document.querySelector(".flex-sidebar").classList.add("hidden");
+  next();
+});
