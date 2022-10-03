@@ -1,4 +1,4 @@
-# Super_Store_Admin
+# Super Store Admin
 
 ## Steps to run:
 
