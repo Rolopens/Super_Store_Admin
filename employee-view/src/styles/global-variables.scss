@@ -1,0 +1,235 @@
+$myFont: "Helvetica Neue LT Std", sans-serif;
+
+$color-primary: rgba(227, 8, 8, 1);
+$color-secondary: rgba(255, 202, 10, 1);
+$color-accent: rgba(209, 213, 219, 1);
+
+$color-text: rgba(17, 24, 39, 1);
+$color-text-white: rgba(255, 255, 255, 1);
+$color-text-gray: rgba(107, 114, 128, 1);
+$color-text-orange: rgba(236, 118, 50, 1);
+
+$fw-regular: 400;
+$fw-semi-bold: 500;
+$fw-bold: 700;
+
+$fs-1300: 2.5rem;
+$fs-1200: 2.1875rem;
+$fs-1100: 1.875rem;
+$fs-1000: 1.5625rem;
+$fs-900: 1.5rem;
+$fs-800: 1.25rem;
+$fs-700: 1.125rem;
+$fs-600: 1rem;
+$fs-500: 0.875rem;
+
+$size-1300: 8rem;
+$size-1200: 7rem;
+$size-1100: 6rem;
+$size-1000: 5rem;
+$size-900: 4.5rem;
+$size-800: 4rem;
+$size-700: 3rem;
+$size-600: 2rem;
+$size-500: 1.5rem;
+$size-400: 1.25rem;
+$size-300: 1rem;
+$size-200: 0.75rem;
+$size-100: 0.5rem;
+
+/* CSS RESET */
+
+body {
+	font-family: $myFont;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+div {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+		border-radius: 100vw;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: darkgrey;
+		border-radius: 100vw;
+	}
+}
+
+html,
+body {
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+// select {
+// 	-webkit-appearance: none;
+// 	-moz-appearance: none;
+// 	appearance: none;
+// 	background-image: url("../assets/triangle.svg");
+// 	background-repeat: no-repeat;
+// 	background-position: 24rem;
+// }
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+// HTML CLASSES
+.bg-primary {
+	background-color: $color-primary;
+}
+
+.bg-secondary {
+	background-color: $color-secondary;
+}
+
+.bg-accent {
+	background-color: $color-accent;
+}
+
+.text-color {
+	color: $color-text;
+}
+
+.text-color-white {
+	color: $color-text-white;
+}
+
+.text-color-gray {
+	color: $color-text-gray;
+}
+
+.fw-regular {
+	font-weight: $fw-regular;
+}
+
+.fw-semi-bold {
+	font-weight: $fw-semi-bold;
+}
+
+.fw-bold {
+	font-weight: $fw-bold;
+}
+
+.fs-500 {
+	font-size: $fs-500;
+}
+
+.fs-600 {
+	font-size: $fs-600;
+}
+
+.fs-700 {
+	font-size: $fs-700;
+}
+
+.fs-800 {
+	font-size: $fs-800;
+}
+
+.fs-900 {
+	font-size: $fs-900;
+}
+
+.fs-1000 {
+	font-size: $fs-1000;
+}
+
+.fs-1100 {
+	font-size: $fs-1100;
+}
+
+.fs-1200 {
+	font-size: $fs-1200;
+}
+
+.fs-1300 {
+	font-size: $fs-1300;
+}
+
+.display-block {
+	display: block;
+}
+
+.title-margin-bottom {
+	margin-block-end: $size-800;
+}
+
+.header-margin-bottom {
+	margin-block-end: $size-700;
+}
+
+.page-margin-inline {
+	margin-inline: 12.75rem;
+}
+
+@media (max-width: 80em) {
+	.page-margin-inline {
+		margin-inline: 4.75rem;
+	}
+}
+
+@media (max-width: 35em) {
+	.page-margin-inline {
+		margin-inline: 0rem;
+	}
+}
+
+.margin-block-start {
+	margin-top: 3rem;
+}
+
+// SCROLL BAR
