@@ -3,7 +3,7 @@
 		<div class="nav-wrapper">
 			<div class="logo">
 				<a href="#"
-					><img src="../assets/whitelogo.svg" alt="Super Store Logo"
+					><img src="../../assets/whitelogo.svg" alt="Super Store Logo"
 				/></a>
 			</div>
 			<a href="#" class="toggle-nav">
@@ -16,41 +16,6 @@
 							<li><a href="#">Supplies</a></li>
 							<li><a href="#">Services</a></li>
 							<li><a href="#">Our Works</a></li>
-						</ul>
-					</div>
-					<div class="search-bar">
-						<form action="/">
-							<input type="text" placeholder="Search" />
-							<img
-								src="../assets/magnifying-glass.svg"
-								alt="Magnifying Glass"
-								width="26"
-								height="26"
-							/>
-						</form>
-					</div>
-					<div class="nav-account-options">
-						<ul class="flex-row">
-							<li><a href="#">SIGN IN</a></li>
-							<li>
-								<a href="#"
-									><img
-										src="../assets/question-mark.svg"
-										alt="Question Mark"
-										width="26"
-										height="26"
-								/></a>
-							</li>
-							<!-- IF STATEMENT HERE TO SEE IF THE CART HAS ANY ITEMS OR NOT -->
-							<li>
-								<a href="#" data-count="5"
-									><img
-										src="../assets/shopping-cart.svg"
-										alt="Shopping Cart"
-										width="26"
-										height="26"
-								/></a>
-							</li>
 						</ul>
 					</div>
 				</div>
@@ -94,6 +59,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-@import "../styles/global-variables.scss";
-@import "../styles/navigationbar.scss";
+@import "../../styles/global-variables.scss";
+@import "../../styles/Staff/navigationbar.scss";
 </style>

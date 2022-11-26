@@ -1,9 +1,9 @@
 .nav-wrapper {
 	height: $size-800;
-	// max-width: 200rem;
 	display: flex;
 	align-items: center;
-	gap: $size-600;
+	gap: 1rem;
+	// gap: $size-600;
 
 	.logo {
 		margin-left: $size-600;

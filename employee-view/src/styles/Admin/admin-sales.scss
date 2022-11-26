@@ -1,0 +1,83 @@
+.admin-sales-wrapper {
+	.header-text {
+		h1 {
+			font-size: $fs-1300;
+			color: $color-primary;
+		}
+	}
+
+	.time-period {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1rem;
+
+		select {
+			font-size: $fs-1100;
+			padding: 0.2rem 1rem 0.2rem 1rem;
+			border-radius: 14px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.sales-wrapper {
+			flex-direction: column !important;
+			align-items: center;
+
+			.sales-section {
+				width: 100% !important;
+			}
+		}
+	}
+
+	.sales-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		// flex-direction: column;
+
+		.sales-section {
+			margin-block: 1rem;
+			overflow-x: auto;
+			width: 50%;
+
+			.pagination {
+				display: flex;
+				align-items: center;
+				// justify-content: flex-end;
+				gap: 5px;
+				margin-top: 14px;
+
+				button {
+					border: none;
+					background-color: transparent;
+				}
+			}
+
+			section {
+			}
+		}
+
+		.yearly-summary {
+			border: 1px solid black;
+			min-width: fit-content;
+			width: 30%;
+			gap: 10%;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 1rem;
+
+			section {
+				// &:not(:last-child) {
+				// 	margin-bottom: 10px;
+				// }
+
+				h2 {
+					display: block;
+					font-size: $fs-900;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.admin-order-wrapper {
+	.header-text {
+		display: flex;
+		justify-content: space-between;
+		h1 {
+			font-size: $fs-1300;
+			color: $color-primary;
+		}
+	}
+
+	.orders-wrapper {
+		overflow-x: auto;
+
+		h2 {
+			font-size: $fs-1100;
+			font-weight: bold;
+		}
+	}
+
+	.margin-top {
+		margin-top: 2.5rem;
+	}
+}

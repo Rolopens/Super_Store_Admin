@@ -1,0 +1,55 @@
+.admin-home-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	h1 {
+		color: $color-primary;
+	}
+
+	.home-portion {
+		//width: 25%;
+
+		h3 {
+			font-size: $fs-700;
+			font-weight: bold;
+		}
+	}
+
+	.container-portion {
+		min-height: 150px;
+		height: fit-content;
+		border: 1px solid black;
+		border-radius: 15px;
+		padding: 1rem;
+	}
+
+	.sales-container {
+		select {
+			font-size: $fs-1100;
+			padding: 0.2rem 1rem 0.2rem 1rem;
+			border-radius: 14px;
+		}
+
+		.sales-selected {
+			display: flex;
+			gap: 7.5%;
+			margin-top: 1rem;
+			flex-wrap: wrap;
+		}
+	}
+
+	.best-container {
+		display: flex;
+		gap: 25%;
+	}
+
+	.customers-container {
+		display: flex;
+		gap: 25%;
+	}
+
+	.journey-container {
+		display: flex;
+		gap: 25%;
+	}
+}

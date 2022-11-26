@@ -3,7 +3,7 @@
 		<div class="primary-footer-wrapper">
 			<div class="company-description text-color-white">
 				<div>
-					<img src="../assets/whitelogo.svg" alt="Super Store Logo" />
+					<img src="../../assets/whitelogo.svg" alt="Super Store Logo" />
 					<p>
 						Office, School Supplies, Superstore, Inc. is your friendly
 						neighborhood store that aims to meet your every need. We keep
@@ -28,17 +28,17 @@
 					<ul>
 						<li>
 							<a aria-label="Facebook" href="#"
-								><img src="../assets/Facebook.svg" alt="Facebook Icon"
+								><img src="../../assets/Facebook.svg" alt="Facebook Icon"
 							/></a>
 						</li>
 						<li>
 							<a aria-label="Instagram" href="#"
-								><img src="../assets/Instagram.svg" alt="Instagram Icon"
+								><img src="../../assets/Instagram.svg" alt="Instagram Icon"
 							/></a>
 						</li>
 						<li>
 							<a aria-label="Viber" href="#"
-								><img src="../assets/Viber.svg" alt="Viber Icon"
+								><img src="../../assets/Viber.svg" alt="Viber Icon"
 							/></a>
 						</li>
 					</ul>
@@ -75,6 +75,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/global-variables.scss";
-@import "../styles/footer.scss";
+@import "../../styles/global-variables.scss";
+@import "../../styles/footer.scss";
 </style>
