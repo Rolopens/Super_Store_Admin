@@ -7,6 +7,17 @@
 		}
 	}
 
+	.active-products {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+
+		p {
+			font-size: $fs-900;
+		}
+	}
+
 	select {
 		font-size: $fs-1100;
 		padding: 0.2rem 1rem 0.2rem 1rem;

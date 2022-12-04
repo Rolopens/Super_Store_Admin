@@ -1,13 +1,14 @@
-.artist-wrapper {
+.production-personnel-wrapper {
 	padding-bottom: 15.2rem;
 	.header-text {
+		margin-top: 2rem;
 		h1 {
 			font-size: $fs-1300;
 			color: $color-primary;
 		}
 	}
 
-	.artist-table {
+	.production-table {
 		overflow-x: auto;
 
 		table {

@@ -1,0 +1,82 @@
+.page-margin-inline {
+	margin-inline: 5rem !important;
+	.cs-orders-wrapper {
+		padding-bottom: 15.2rem;
+		.header-text {
+			margin-top: 2rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			h1 {
+				font-size: $fs-1300;
+				color: $color-primary;
+			}
+
+			button {
+				border: none;
+				background-color: #67cf61;
+				color: white;
+				padding: 0.5rem 1.2rem;
+				border-radius: 14px;
+			}
+		}
+
+		.umbrella-sections {
+			margin-block: 2rem;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+
+			label {
+				position: relative;
+				border: 1px solid $color-accent;
+				border-radius: 10px;
+				padding: $size-300 $size-600;
+				display: flex;
+				align-items: center;
+			}
+
+			input[type="radio"] {
+				display: none;
+			}
+
+			input[type="radio"]:checked + label {
+				border: 1px solid rgba(236, 118, 50, 1);
+
+				&:before {
+					height: 20px;
+					width: 20px;
+					border: 6px solid rgba(236, 118, 50, 1);
+				}
+			}
+		}
+
+		.cs-order-table {
+			overflow-x: auto;
+
+			table {
+				min-width: 100%;
+				white-space: nowrap;
+				border-collapse: collapse;
+
+				th {
+					font-size: 1.5rem;
+				}
+
+				td {
+					border: 1px solid black;
+				}
+
+				img {
+					height: 100px;
+				}
+
+				select {
+					font-size: $fs-900;
+					padding: 0.1rem;
+					border-radius: 14px;
+				}
+			}
+		}
+	}
+}

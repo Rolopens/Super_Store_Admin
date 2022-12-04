@@ -1,20 +1,21 @@
 <template>
 	<div class="margin-block-start page-margin-inline">
-		<div class="artist-wrapper">
+		<div class="production-personnel-wrapper">
+			<StaffAveProcessing />
 			<div class="header-text">
-				<h1>Orders</h1>
+				<h1>Production Personnel</h1>
 			</div>
-			<div class="artist-table">
+			<div class="production-table">
 				<table>
 					<thead>
 						<tr>
+							<th>Date</th>
 							<th>Order #</th>
-							<th>Size</th>
-							<th>Color</th>
-							<th>Additional Services</th>
-							<th>Notes</th>
-							<th>Sample</th>
-							<th>Upload</th>
+							<th>Service</th>
+							<th>Specifications</th>
+							<th>Other Instructions</th>
+							<th>File</th>
+							<th>Status</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -25,6 +26,10 @@
 							<td>Matte</td>
 							<td>Instructions Here</td>
 							<td>
+								<input type="file" />
+								<button>Save <i class="fa-solid fa-floppy-disk"></i></button>
+							</td>
+							<td>
 								<a
 									download="Sample"
 									href="https://picsum.photos/200/300"
@@ -32,11 +37,6 @@
 								>
 									<img src="https://picsum.photos/200/300" alt="" />
 								</a>
-							</td>
-							<!-- If statement. If there is a picture then it shows the preview, if not then the input option -->
-							<td>
-								<input type="file" />
-								<button>Save <i class="fa-solid fa-floppy-disk"></i></button>
 							</td>
 						</tr>
 					</tbody>
@@ -47,12 +47,16 @@
 </template>
 
 <script>
+import StaffAveProcessing from "../../../popups/StaffAveProcessing.vue";
 export default {
-	name: "ArtistView",
+	name: "ProductionProcessing",
+	components: {
+		StaffAveProcessing,
+	},
 };
 </script>
 
 <style lang="scss">
-@import "../../styles/global-variables.scss";
-@import "../../styles/Staff/artist-view.scss";
+@import "../../../styles/global-variables.scss";
+@import "../../../styles/Staff/Production Personnel/production-view.scss";
 </style>

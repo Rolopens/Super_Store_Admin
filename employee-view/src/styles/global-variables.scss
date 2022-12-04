@@ -239,6 +239,7 @@ table {
 
 	th {
 		font-size: 2rem;
+		padding-right: 10px;
 	}
 
 	tr {
@@ -248,7 +249,7 @@ table {
 	td {
 		padding: 1rem;
 		border: 1px solid black;
-		// background-color: #d3d3d3;
+		min-width: fit-content;
 	}
 }
 
